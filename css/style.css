@@ -1,0 +1,122 @@
+.screen { display:none; }
+.active { display:block; }
+
+.wrap {
+  /*サイト全体幅1200px*/
+    width: 71.6mm;
+    height: 149.6mm;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: whitesmoke;
+}
+
+.header {
+    padding: 10px;
+    font-size: 28px;
+    color: white;
+    font-family: "Nico Moji";
+    display: flex;
+    justify-content: center;
+    background-color:rgb(54, 62, 70)
+}
+
+.time_limit {
+    display: flex;
+    justify-content: center; 
+    margin: 10px 10px;
+    font-size: 24px;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#timer_display {
+    display: flex;
+    justify-content: center; 
+    margin: 10px 10px;
+    font-size: 24px;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#en_word {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 24px;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(255, 248, 148);
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    font-family: "Yusei Magic", sans-serif;
+    font-size: 20px;
+}
+
+.choice_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.choice_btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    font-size: 20px;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#under_btn {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 20px;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#today_stats {
+    display: flex;
+    justify-content: center; 
+    margin: 10px 10px;
+    font-size: 18px;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#history_screen {
+    display: flex;
+    justify-content: center; 
+    margin: 10px 10px;
+    font-size: 18px;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#back_btn {
+    margin: 10px;
+}

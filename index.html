@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>怒涛の英単語クイズ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="wrap" id="main_screen">
+    <header class="header">
+    <h1>怒涛の英単語クイズ</h1>
+    </header>
+
+    <!-- 時間選択のドロップダウン -->
+    <label class="time_limit">制限時間：
+        <select id="timer_select">
+            <option value="10">10秒</option>
+            <option value="9">9秒</option>
+            <option value="8">8秒</option>
+            <option value="7">7秒</option>
+            <option value="6">6秒</option>
+            <option value="5">5秒</option>
+            <option value="4">4秒</option>
+            <option value="3">3秒</option>
+            <option value="2">2秒</option>
+            <option value="1">1秒</option>
+        </select>
+    </label>
+
+    <p id="timer_display">残り時間：-- 秒</p>
+
+    <!-- 英単語を表示 -->
+    <p id="en_word">English Word</p>
+
+    <!-- 正解 or 不正解 -->
+    <div id="result" style="display:none;">正解！</div>
+
+    <!-- 選択肢エリア -->
+    <div id="choices">
+        <a href="#" class="choice_btn" id="choice1"></a>
+        <a href="#" class="choice_btn" id="choice2"></a>
+        <a href="#" class="choice_btn" id="choice3"></a>
+        <a href="#" class="choice_btn" id="choice4"></a>
+    </div>
+
+    <div id="under_btn">
+        <!-- タイマー一時停止ボタン -->
+        <button id="pause_btn">⏸️一時停止</button>
+        <!-- 更新ボタン -->
+        <button id="update_btn">更新</button>
+        <!-- 学習履歴ボタン -->
+        <button id="history_btn">学習履歴</button>
+    </div>
+
+    <div id="today_stats">今日の成績：0問中0問正解（0%）</div>
+  </div>
+
+    <!-- 履歴表示ページ (初期は非表示)-->
+    <div class="wrap" id="history_screen" style="display:none;">
+        <h2>学習履歴</h2>
+        <div id="history_list"></div>
+        <button id="back_btn">戻る</button>
+    </div>
+
+    <!-- jQueryが先 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- .jsが後 -->
+    <script src="js/app.js"></script>
+    <script src="js/word.js"></script>
+</body>
+</html>
